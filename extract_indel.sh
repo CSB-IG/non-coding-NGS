@@ -16,4 +16,3 @@ bzcat /amerindio2/GS000033670-DID/GS000033845-ASM/GS02379-DNA_F02/ASM/masterVarB
 bzcat /amerindio2/GS000033671-DID/GS000033846-ASM/GS02379-DNA_G02/ASM/masterVarBeta-GS000033846-ASM.tsv.bz2 | grep -P "\t(ins|del)\t" | awk '{print $3,$4,$5}' > GS000033846_indel.map &
 bzcat /amerindio2/GS000033672-DID/GS000033847-ASM/GS02379-DNA_H02/ASM/masterVarBeta-GS000033847-ASM.tsv.bz2 | grep -P "\t(ins|del)\t" | awk '{print $3,$4,$5}' > GS000033847_indel.map &
 
-
