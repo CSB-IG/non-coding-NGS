@@ -25,25 +25,13 @@ centre_union = set.union(*[centre_sets[n] for n in centre])
 peninsula_union = set.union(*[peninsula_sets[n] for n in peninsula])
 
 
-
-# pIc = len(peninsula_union.intersection( centre_union))
-
-# pIn = len(peninsula_union.intersection( north_union))
-
-# cIn = len(centre_union.intersection( north_union))
-
-# nIcIp = len(set.intersection(centre_union, north_union, peninsula_union))
-
-# just_north = len(north_union - centre_union.union(peninsula_union))
-
-# just_centre = len(centre_union - north_union.union(peninsula_union))
-
-# just_peninsula = len(peninsula_union - north_union.union(centre_union))
-
-
 from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib_venn import venn3
 plt.figure(figsize=(4,4))
 v = venn3([north_union, centre_union, peninsula_union], set_labels=('Norte', 'Centro', 'Sur'))
-plt.show()
+
+figure.set_size_inches(3,9)
+figure.set_dpi(200)
+plt.savefig('regiones_indel.svg')
+

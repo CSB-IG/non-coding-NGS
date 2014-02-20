@@ -63,8 +63,8 @@ sample_ethnicity = {
     'E01': ( 'm5', 'JIAT' ),
     'F01': ( 'Tepehuano', 'TEP09' ),
     'G01': ( 'Tepehuano', 'TEP03' ),
-    'H01': ( 'Zapoteco', 'CGM077' ),
-    'A02': ( 'Zapoteco', 'CGM66' ),
+    'H01': ( 'Zapoteca', 'CGM077' ),
+    'A02': ( 'Zapoteca', 'CGM66' ),
     'B02': ( 'Maya', 'DZ5' ),
     'C02': ( 'Maya', 'APOM10' ),
     'D02': ( 'Nahua', 'AM1554' ),
@@ -81,27 +81,27 @@ ethnicity_code = {'Maya1'        : 'GS000033841',
                   'Nahua2'       : 'GS000033844',
                   'Tarahumara1'  : 'GS000034176',
                   'Tarahumara2'  : 'GS000033847',
-                  'Tepehuano1'   : 'GS000033837',
-                  'Tepehuano2'   : 'GS000033838',
+                  'Tepehuana1'   : 'GS000033837',
+                  'Tepehuana2'   : 'GS000033838',
                   'Totonaca1'    : 'GS000033845',
                   'Totonaca2'    : 'GS000033846',
-                  'Zapoteco1'    : 'GS000033840',
-                  'Zapoteco2'    : 'GS000033839',
+                  'Zapoteca1'    : 'GS000033840',
+                  'Zapoteca2'    : 'GS000033839',
                   'm1'           : 'GS000033832',
                   'm2'           : 'GS000033833',
                   'm3'           : 'GS000033834',
                   'm4'           : 'GS000033835',
                   'm5'           : 'GS000033836'}
 
-north     = [ 'Tarahumara1' , 'Tarahumara2', 'Tepehuano1', 'Tepehuano2' ]
-centre    = [ 'Nahua1', 'Nahua2', 'Zapoteco1', 'Zapoteco2', 'Totonaca1', 'Totonaca2' ]
+north     = [ 'Tarahumara1' , 'Tarahumara2', 'Tepehuana1', 'Tepehuana2' ]
+centre    = [ 'Nahua1', 'Nahua2', 'Zapoteca1', 'Zapoteca2', 'Totonaca1', 'Totonaca2' ]
 peninsula = [ 'Maya1', 'Maya2' ]
 admixed   = [ 'm1', 'm2', 'm3', 'm4', 'm5' ]
 
 mayas       = ['Maya1', 'Maya2']
 nahuas      = ['Nahua1', 'Nahua2']
 tarahumaras = ['Tarahumara1','Tarahumara2']
-tepehuanos  = ['Tepehuano1','Tepehuano2']
+tepehuanos  = ['Tepehuana1','Tepehuana2']
 totonacas   = ['Totonaca1', 'Totonaca2']
-zapotecas   = ['Zapoteco1','Zapoteco2']
+zapotecas   = ['Zapoteca1','Zapoteca2']
 
