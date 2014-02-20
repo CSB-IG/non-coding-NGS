@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.rcParams.update({'font.size': 8})
+
 from sample_code_file_maps import snps, indels, ethnicity_code
 from sample_code_file_maps import north, centre, peninsula, admixed
 from sample_code_file_maps import mayas, nahuas, tarahumaras, tepehuanos, totonacas, zapotecas
@@ -29,9 +32,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib_venn import venn3
 plt.figure(figsize=(4,4))
-v = venn3([north_union, centre_union, peninsula_union], set_labels=('Norte', 'Centro', 'Sur'))
-
-figure.set_size_inches(3,9)
-figure.set_dpi(200)
+v = venn3([north_union, centre_union, peninsula_union], set_labels=('North', 'Centre', 'South'))
 plt.savefig('regiones_indel.svg')
 

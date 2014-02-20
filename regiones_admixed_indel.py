@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.rcParams.update({'font.size': 8})
+
 from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib_venn import venn3
@@ -35,8 +38,7 @@ centre_union    = set.union(*[centre_sets[n] for n in centre])
 peninsula_union = set.union(*[peninsula_sets[n] for n in peninsula])
 admixed_union   = set.union(*[admixed_sets[n] for n in admixed])
 
-#plt.figure(figsize=(4,4))
-import pprint
+
 
 figure, axes = plt.subplots(1,3)
 figure.set_size_inches(10,30)

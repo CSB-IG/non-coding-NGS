@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.rcParams.update({'font.size': 8})
+
 from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib_venn import venn2, venn3
@@ -44,8 +47,10 @@ zapotecas_u    = set.union(*[zapotecas_sets[n] for n in zapotecas])
 
 
 figure, axes = plt.subplots(1,2)
-figure.set_size_inches(9,3)
-figure.set_dpi(300)
 venn2([tarahumaras_u, tepehuanos_u], set_labels=('Tarahumara', 'Tepehuano'),ax=axes[0])
 venn3([nahuas_u, totonacas_u, zapotecas_u], set_labels=('Nahua', 'Totonaca', 'Zapoteca'),ax=axes[1])
+
+figure.set_size_inches(9,3)
+figure.set_dpi(300)
+
 plt.savefig('centro_norte_intraregion_snp.svg')

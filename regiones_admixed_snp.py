@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.rcParams.update({'font.size': 8})
+
 from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib_venn import venn3
@@ -35,11 +38,9 @@ centre_union    = set.union(*[centre_sets[n] for n in centre])
 peninsula_union = set.union(*[peninsula_sets[n] for n in peninsula])
 admixed_union   = set.union(*[admixed_sets[n] for n in admixed])
 
-#plt.figure(figsize=(4,4))
-import pprint
 
 figure, axes = plt.subplots(1,3)
-pprint.pprint(axes)
+
 venn3([admixed_union, centre_union, peninsula_union], set_labels=('Admixed', 'Centre', 'South'),ax=axes[0])
 venn3([north_union, admixed_union, peninsula_union], set_labels=('North', 'Admixed', 'South'),ax=axes[1])
 venn3([north_union, centre_union, admixed_union], set_labels=('North', 'Centre', 'Admixed'),ax=axes[2])
