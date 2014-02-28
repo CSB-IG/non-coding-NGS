@@ -96,7 +96,7 @@ ethnicity_code = {'Maya1'        : 'GS000033841',
 north     = [ 'Tarahumara1' , 'Tarahumara2', 'Tepehuana1', 'Tepehuana2' ]
 centre    = [ 'Nahua1', 'Nahua2', 'Zapoteca1', 'Zapoteca2', 'Totonaca1', 'Totonaca2' ]
 peninsula = [ 'Maya1', 'Maya2' ]
-admixed   = [ 'm1', 'm2', 'm3', 'm4', 'm5' ]
+admixed   = [ 'm2', 'm3', ]
 
 mayas       = ['Maya1', 'Maya2']
 nahuas      = ['Nahua1', 'Nahua2']
