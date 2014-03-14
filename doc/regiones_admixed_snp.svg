@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.41986485"
-     inkscape:cx="766.56575"
+     inkscape:cx="474.8052"
      inkscape:cy="715.05099"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -234,22 +234,22 @@
        sodipodi:linespacing="125%"
        id="text3933"
        y="495.44788"
-       x="666.54333"
+       x="649.51654"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
        xml:space="preserve"><tspan
          id="tspan3935"
          sodipodi:role="line"
-         x="666.54333"
+         x="649.51654"
          y="495.44788">0.02</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="666.54333"
+       x="649.51654"
        y="980.44788"
        id="text3937"
        sodipodi:linespacing="125%"><tspan
          y="980.44788"
-         x="666.54333"
+         x="649.51654"
          sodipodi:role="line"
          id="tspan3939">0.34</tspan></text>
     <text
@@ -296,5 +296,16 @@
          sodipodi:role="line"
          x="785.31677"
          y="1179.4479">0.05</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="649.51654"
+       y="1312.2228"
+       id="text3907"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3911"
+         x="649.51654"
+         y="1312.2228">0.01</tspan></text>
   </g>
 </svg>
