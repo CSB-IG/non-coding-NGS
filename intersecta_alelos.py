@@ -6,13 +6,14 @@ from sample_code_file_maps import mayas, nahuas, tarahumaras, tepehuanos, totona
 
 
 def intersecta_grupo( grupo ):
-    return set.intersection(*[set([v.strip() for v in open( "maps/%s_indel.map" % ethnicity_code[s]).readlines()]) for s in grupo])
+    return set.intersection(*[set([v.strip() for v in open( "%s_snp_non_coding.alleles" % ethnicity_code[s]).readlines()]) for s in grupo])
 
 def write_allele_file( s, path):
     with open(path, 'w') as f:
         for a in s:
             c = a.split()
-            f.write("%s,%s,%s,%s\n" % (c[0],c[2],c[3],c[4]))
+            if c[0] != 'chrM' and len(c[3])==1 and len(c[4])==1:
+                f.write("%s,%s,%s,%s\n" % (c[0],c[2],c[3],c[4]))
 
 
 write_allele_file( intersecta_grupo( north ), "north.csv" )
