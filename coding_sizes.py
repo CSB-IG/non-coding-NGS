@@ -1,19 +1,16 @@
 
 gmap = open('maps/all_genes_sorted.map', 'r').readlines()
 
-lengths = {}
+coding_length = {}
 for g in gmap:
     (chrom, start, end) = g.strip().split()
-    if chrom in lengths:
-        lengths[chrom] += (int(end) - int(start))
+    if chrom in coding_length:
+        coding_length[chrom] += (int(end) - int(start))
     else:
-        lengths[chrom] = (int(end) - int(start))
+        coding_length[chrom] = (int(end) - int(start))
 
 
-import pprint
-pprint.pprint(lengths)
-    
-
+coding_length['Y'] = 0
 
 # genes per chromosome, in order
 gene_count = {
@@ -39,7 +36,8 @@ gene_count = {
     '20': 645,
     '21': 291,
     '22': 539,
-    'X': 1002
+    'X': 1002,
+    'Y': 0,
 }
 
 
@@ -69,3 +67,15 @@ chromosome_length = {
     'X': 156040895,
     'Y': 57227415,
 }    
+
+
+print "chr length coding_length gene_count"
+for nn in range(1,23) + ['X', 'Y']:
+    n = str(nn)
+    print "%s %s %s %s" % (n,
+                           chromosome_length[n],
+                           coding_length[n],
+                           gene_count[n],)
+
+
+                           
