@@ -6,7 +6,7 @@ from sample_code_file_maps import mayas, nahuas, tarahumaras, tepehuanos, totona
 
 
 def intersecta_grupo( grupo ):
-    return set.intersection(*[set([v.strip() for v in open( "%s_snp_non_coding.alleles" % ethnicity_code[s]).readlines()]) for s in grupo])
+    return set.intersection(*[set([v.strip() for v in open( "alleles/%s_snp_non_coding_ensembl.alleles" % ethnicity_code[s]).readlines()]) for s in grupo])
 
 def write_allele_file( s, path):
     with open(path, 'w') as f:
@@ -16,14 +16,14 @@ def write_allele_file( s, path):
                 f.write("%s,%s,%s,%s\n" % (c[0],c[2],c[3],c[4]))
 
 
-write_allele_file( intersecta_grupo( north ), "north.csv" )
-write_allele_file( intersecta_grupo( centre ), "centre.csv"  )
-write_allele_file( intersecta_grupo( peninsula ), "peninsula.csv"  )
-write_allele_file( intersecta_grupo( admixed ), "admixed.csv"  )
-write_allele_file( intersecta_grupo( mayas ), "mayas.csv"  )
-write_allele_file( intersecta_grupo( nahuas ), "nahuas.csv"  )
-write_allele_file( intersecta_grupo( tarahumaras ), "tarahumaras.csv"  )
-write_allele_file( intersecta_grupo( tepehuanos ), "tepehuanos.csv"  )
-write_allele_file( intersecta_grupo( totonacas ), "totonacas.csv"  )
-write_allele_file( intersecta_grupo( zapotecas ), "zapotecas.csv"  )
+write_allele_file( intersecta_grupo( north ), "north_nc_ensembl_alleles.csv" )
+write_allele_file( intersecta_grupo( centre ), "centre_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( peninsula ), "peninsula_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( admixed ), "admixed_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( mayas ), "mayas_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( nahuas ), "nahuas_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( tarahumaras ), "tarahumaras_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( tepehuanos ), "tepehuanos_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( totonacas ), "totonacas_nc_ensembl_alleles.csv"  )
+write_allele_file( intersecta_grupo( zapotecas ), "zapotecas_nc_ensembl_alleles.csv"  )
 
