@@ -1,0 +1,20 @@
+CGATOOLS=/export/home/rgarcia/bin/cgatools-1.8.0.1-linux_binary-x86_64/bin/cgatools
+REF=/export/home/rgarcia/reference/ucsc.hg19.crr
+
+EVIDENCE={{ evidence }}
+REGION={{ region }}
+OUTPUT={{ output }}
+
+BASE=`basename {{ output }} .sam`
+DIR=`dirname {{ output }}`
+
+$CGATOOLS evidence2sam \
+    --beta \
+    --reference $REF \
+    --evidence-dnbs $EVIDENCE \
+    --extract-genomic-region $REGION \
+    --output $OUTPUT 
+
+samtools view -Shb $OUTPUT > ${DIR}/${BASE}.bam
+samtools sort ${DIR}/${BASE}.bam ${BASE}_sorted
+samtools index ${DIR}/${BASE}_sorted.bam

@@ -1,0 +1,20 @@
+snapshotDirectory /home/rgarcia/shiva/non-coding-NGS/igv_snapshots/images
+
+
+goto 15:48791193
+sort strand
+snapshot
+
+
+goto 2:21231387
+sort strand
+snapshot
+
+
+goto 2:21233999
+sort strand
+snapshot
+
+
+
+
